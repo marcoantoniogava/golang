@@ -22,9 +22,15 @@
 <body>
     <h2>Página Principal</h2>
 
-    <marquee>
-        <h4>Seja bem vindo, {{ .Nome }}</h4>
-    </marquee>
+    <button id="botao">Clique em Mim!</button>
+
+    <script>
+        var botao = document.getElementById("botao");
+        botao.onclick = function() {
+            alert("Botão clicado com sucesso!")
+        }
+    </script>
+
 </body>
 
 </html>
